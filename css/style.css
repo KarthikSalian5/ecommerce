@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.pink{
+    color: rgb(255, 141, 179);
+}
+
+.gray{
+    color: grey;
+}
+
+.original-price{
+    text-decoration: line-through;
+    margin-left: 1rem;
+    color:gray;
+}
+
+hr{
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    overscroll-behavior-inline: contain;
+    font-family: Poppins, sans-serif;
+}
+
+button {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background-color:rgb(255, 141, 179);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+button:hover{
+    scale:1.03;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:5%;
+}
+
+header>input{
+    flex-grow: 1;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.social-icons-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+    font-size: 1.4rem;
+}
+
+main,footer,header{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section {
+    width: 100%;
+}
+
+
+.hero {
+    width: 100%;
+    background-image: url("../images/banner-1.jpg");
+    height: 380px;
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    padding: 1.5rem;
+    padding-left: 8%;
+    border-radius: 10px;
+
+}
+
+.hero>div {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+}
+
+#product-types-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 1.4rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+#product-types-container img {
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.product-type {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 2px solid gray;
+    scroll-snap-align: start;
+}
+
+.product-type>*:last-child {
+    margin-left: auto;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.products-showdown{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.products-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.product {
+    width: 100%;
+    padding: 1rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: left;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.product>div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.deal-day {
+    padding: 1rem;
+}
+
+
+.deal-day>img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.deal-day>H3 {
+    text-overflow: ellipsis;
+}
+
+.new-products-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.product-card{
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.product-card>img{
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.testimonial>img{
+    width: 100px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.testimonial>p{
+    max-width: 70%;
+    color: gray;
+}
+
+
+.banner{
+    background-image: url("/images/cta-banner.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner>div {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+}
+
+.blogs-container{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog{
+    max-width: 300px;
+}
+
+.blog>img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgb(32, 32, 32);
+    color: rgb(172, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.testimonial-section{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+.promise-container{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    min-width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.promise{
+    height: 5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    gap:.3rem;
+}
+
+.promise>img{
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    #product-types-container {
+        grid-auto-columns: 32%;
+    }
+
+    .testimonial-section{
+        flex-direction: row;
+    }
+
+    .products-showdown{
+        flex-direction: row;
+    }
+
+    .new-products-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
