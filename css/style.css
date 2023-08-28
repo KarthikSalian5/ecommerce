@@ -69,10 +69,10 @@ header{
     border-bottom: 1px solid grey;
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap:5%;
+    gap:1rem;
 }
 
 header>input{
@@ -362,7 +362,7 @@ footer{
     aspect-ratio: 1;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     #product-types-container {
         grid-auto-columns: 32%;
     }
@@ -379,6 +379,12 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        gap:5%;
     }
 
 }
